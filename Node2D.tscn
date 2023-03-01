@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 721.0
+margin_top = 48.0
+margin_right = 851.0
+margin_bottom = 114.0
+text = "1"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 715.0
+margin_top = 175.0
+margin_right = 862.0
+margin_bottom = 241.0
+text = "2"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 724.0
+margin_top = 310.0
+margin_right = 855.0
+margin_bottom = 390.0
+text = "3"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 91.0
+margin_top = 88.0
+margin_right = 226.0
+margin_bottom = 158.0
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 106.0
+margin_top = 246.0
+margin_right = 243.0
+margin_bottom = 322.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 392.0
+margin_top = 179.0
+margin_right = 556.0
+margin_bottom = 258.0
+text = "Nome"
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 387.0
+margin_top = 81.0
+margin_right = 550.0
+margin_bottom = 156.0
+text = "Numero"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
